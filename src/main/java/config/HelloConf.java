@@ -14,7 +14,6 @@ import model.UserMdl;
 
 public class HelloConf  extends JFinalConfig {
 
-    @Override
     public void configConstant(Constants constants) {
 
         constants.setDevMode(true);
@@ -22,7 +21,6 @@ public class HelloConf  extends JFinalConfig {
         PropKit.use("constant.properties");
     }
 
-    @Override
     public void configRoute(Routes routes) {
         //        me.add("/", IndexController.class);	// 第三个参数为该Controller的视图存放路径
         routes.add("user", UserCtr.class);//http://localhost/user/test 对应到usercontroller的test（）；
@@ -34,7 +32,6 @@ public class HelloConf  extends JFinalConfig {
     }
 
 
-    @Override
     public void configPlugin(Plugins plugins) {
         C3p0Plugin C3p0Plugin = createC3p0Plugin();
         plugins.add(C3p0Plugin);
@@ -45,11 +42,9 @@ public class HelloConf  extends JFinalConfig {
         arp.addMapping("userinfo", UserMdl.class);
     }
 
-    @Override
     public void configInterceptor(Interceptors interceptors) {
 
     }
-    @Override
     public void configHandler(Handlers me) {
         // TODO Auto-generated method stub
 //		me.add(new ContextPathHandler("basePath"));
