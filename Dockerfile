@@ -1,4 +1,4 @@
-FROM hub.c.163.com/oliver_lee/mytomcat:v7
+FROM hub.c.163.com/oliver_lee/mytomcat:v6
 MAINTAINER limingming
 #RUN /bin/bash -c "source /etc/profile" && java -version
 #RUN java -version
