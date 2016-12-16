@@ -21,4 +21,7 @@ public class UserCtr extends Controller {
         this.renderText("this is addUser");
         userSer.addUser("limingming3");
     }
+    public void addtest(){
+        this.renderText("this is addtest function");
+    }
 };
