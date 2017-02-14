@@ -28,14 +28,20 @@ public class AdminCtr extends Controller{
         XmUserMdl usermodel = getModel(XmUserMdl.class,  "xmuser");
         //加入数据库
         usermodel.save();
-        console();
+        redirect("/admin/console");
+    }
+    public void updateuser(){
+        XmUserMdl usermodel = getModel(XmUserMdl.class,  "xmuser");
+        //加入数据库
+        usermodel.update();
+        redirect("/admin/console");
     }
 
     public void delUser()
     {
         XmUserMdl.dao.deleteById(getPara(0));
         this.renderText("user has been deleted");
-        console();
+        redirect("/admin/console");
     }
     public void editUser(){
         int userId = getParaToInt(0);
