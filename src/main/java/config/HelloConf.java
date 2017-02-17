@@ -38,8 +38,6 @@ public class HelloConf  extends JFinalConfig {
         routes.add("admin", AdminCtr.class);
         routes.add("vmuser", VmUserCtr.class);
 
-
-        //3ed参数是viewpath，默认为controler的名字
     }
 
     public static C3p0Plugin createC3p0Plugin() {
