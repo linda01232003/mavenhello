@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f69448f4-05ac-4ece-bf3e-e49af1be80a5" name="Default" comment="删除了汉字">
+    <list default="true" id="f69448f4-05ac-4ece-bf3e-e49af1be80a5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/config/HelloConf.java" afterPath="$PROJECT_DIR$/src/main/java/config/HelloConf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/UserCtr.java" afterPath="$PROJECT_DIR$/src/main/java/controller/UserCtr.java" />
     </list>
     <ignored path="mavenhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -954,7 +952,7 @@
       <workItem from="1487064174660" duration="730000" />
       <workItem from="1487160976502" duration="19799000" />
       <workItem from="1487299410482" duration="4106000" />
-      <workItem from="1487327233651" duration="3735000" />
+      <workItem from="1487327233651" duration="3897000" />
     </task>
     <task id="LOCAL-00001" summary="新增V名">
       <created>1487303905229</created>
@@ -991,11 +989,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487329382227</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="删除了汉字">
+      <created>1487331137162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487331137162</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167240000" />
+    <option name="totallyTimeSpent" value="167402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
