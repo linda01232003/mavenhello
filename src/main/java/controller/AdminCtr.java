@@ -26,7 +26,7 @@ public class AdminCtr extends Controller{
     }
     public void adduser(){
         XmUserMdl usermodel = getModel(XmUserMdl.class,  "xmuser");
-        //加入数据库
+        //保存数据
         usermodel.save();
         redirect("/admin/console");
     }
