@@ -33,7 +33,7 @@ public class HelloConf  extends JFinalConfig {
     }
 
     public void configRoute(Routes routes) {
-        //        me.add("/", IndexController.class);	// 第三个参数为该Controller的baseViewPath
+        //        me.add("/", IndexController.class);   // 第三个参数为该Controller的baseViewPath
         routes.add("user", UserCtr.class);//http://localhost/user/test 对应到usercontroller的test（）；
         routes.add("admin", AdminCtr.class);
         routes.add("vmuser", VmUserCtr.class);
