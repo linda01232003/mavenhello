@@ -11,8 +11,8 @@ html{
 	border-bottom: 1px dashed;
 }
 .vm_form input{
-	margin-left: 10px;
-	/*width: 90%;*/
+	margin-left: 6px;
+	width: 95%;
 }
 .vm_form .vm_form_star{
 	color: red;
@@ -25,5 +25,10 @@ html{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	display: block;
+}
+
+.vm_form .vm_form_resume{
+	margin-left: 5px;
+	width: 95%;
 }
 

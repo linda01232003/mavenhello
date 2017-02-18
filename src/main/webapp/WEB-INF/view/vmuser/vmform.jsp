@@ -14,13 +14,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
     <title></title>
-    <link rel="stylesheet" href="<%=path%>/css/mui.min.css"/>
-    <link rel="stylesheet" href="<%=path%>/css/vmcomm.css"/>
+    <link rel="stylesheet" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="css/vmcomm.css"/>
 </head>
 <body>
-<div class="vm_header">
+<div class="vm_header" align="center">
     <h1 class="mui-title vm_header_title">V名片</h1>
 </div>
 <div class="vm_content">
@@ -57,7 +58,7 @@
         <input name="xmusercard.title" type="text" />
         <div class="vm_line"></div>
 
-        <label>固话<span class="vm_form_star">*</span></label>
+        <label>固话</label>
         <input name="xmusercard.phone" type="text" />
         <div class="vm_line"></div>
 
@@ -65,7 +66,7 @@
         <input name="xmusercard.corpaddr" type="text" />
         <div class="vm_line"></div>
 
-        <label>擅长领域<span class="vm_form_star">*</span></label>
+        <label>擅长领域和职业技能<span class="vm_form_star">*</span></label>
         <input name="xmusercard.profession" type="text" />
         <div class="vm_line"></div>
 
@@ -73,12 +74,8 @@
         <input name="xmusercard.begintime" type="text" />
         <div class="vm_line"></div>
 
-        <label>职业技能<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.professionskill" type="text" />
-        <div class="vm_line"></div>
-
         <label>个人简介<span class="vm_form_star">*</span></label>
-        <textarea name="xmusercard.indiviualresume" rows="8" cols="3"></textarea>
+        <textarea class="vm_form_resume" name="xmusercard.indiviualresume" rows="8" cols="3"></textarea>
         <div class="vm_line"></div>
 
         <label>个人头像<span class="vm_form_star">*</span></label>
