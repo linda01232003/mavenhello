@@ -14,6 +14,9 @@ public class VmUserCtr extends Controller {
     public void form(){
         this.render("vmform.jsp");
     }
+    public void welcom(){
+        this.render("welcom.jsp");
+    }
     public void adduserinf(){
         //****注意，如果form表单中既有text又有文件。要先接收文件。
         UploadFile headimg = getFile("headimg");
@@ -27,14 +30,8 @@ public class VmUserCtr extends Controller {
         if(null != corplogo)
         {
             userinfo.set("corplogo", "/vmupload/" + corplogo.getFileName());
-            setAttr("corplogo", "/vmupload/" + corplogo.getFileName());
         }
         userinfo.save();
-        this.render("welcom.jsp");
-
-//        System.out.println("file path is " + headimg.getUploadPath());
-//        System.out.println("vmupload/" + headimg.getFileName());
-//        System.out.println("file path is " + corplogo.getUploadPath());
-//        System.out.println("vmupload/" + corplogo.getFileName());
+        redirect("welcom");
     }
 }
