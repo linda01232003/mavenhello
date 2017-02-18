@@ -12,7 +12,7 @@ public class AdminCtr extends Controller{
     public  void console(){
         List<XmUserMdl> lstXmUseMdl = XmUserMdl.dao.find("select * from xmuser");
         setAttr("xmuser", lstXmUseMdl);
-        this.render("adminconsole.jsp");
+        this.render("vmadminconsole.jsp");
     }
     public void form(){
         int userId = getParaToInt(0);

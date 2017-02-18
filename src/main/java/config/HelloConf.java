@@ -7,6 +7,7 @@ import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.render.ViewType;
 import controller.AdminCtr;
 import controller.UserCtr;
+import controller.VmAdminCtr;
 import controller.VmUserCtr;
 import intercepetor.GlobalIntercepertor;
 import model.UserMdl;
@@ -37,6 +38,7 @@ public class HelloConf  extends JFinalConfig {
         routes.add("user", UserCtr.class);//http://localhost/user/test 对应到usercontroller的test（）；
         routes.add("admin", AdminCtr.class);
         routes.add("vmuser", VmUserCtr.class);
+        routes.add("vmadmin", VmAdminCtr.class);
 
     }
 

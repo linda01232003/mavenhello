@@ -32,6 +32,6 @@ public class VmUserCtr extends Controller {
             userinfo.set("corplogo", "/vmupload/" + corplogo.getFileName());
         }
         userinfo.save();
-        redirect("welcom");
+        this.render("welcom.jsp");
     }
 }
