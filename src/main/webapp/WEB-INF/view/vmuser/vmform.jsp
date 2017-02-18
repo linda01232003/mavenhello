@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
     <title></title>
-    <link rel="stylesheet" href="${path}/css/mui.min.css"/>
-    <link rel="stylesheet" href="${path}/css/vmcomm.css"/>
+    <link rel="stylesheet" href="<%=path%>/css/mui.min.css"/>
+    <link rel="stylesheet" href="<%=path%>/css/vmcomm.css"/>
 </head>
 <body>
 <div class="vm_header" align="center">

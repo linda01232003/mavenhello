@@ -21,12 +21,12 @@ public class VmUserCtr extends Controller {
         VmUserCardMdl userinfo = getModel(VmUserCardMdl.class, "vmusercard");
         if(null != headimg)
         {
-            userinfo.set("headimage", headimg.getFileName());
+            userinfo.set("headimage", "/vmupload/" + headimg.getFileName());
             setAttr("headimgurl", "/vmupload/" + headimg.getFileName());
         }
         if(null != corplogo)
         {
-            userinfo.set("corplogo", corplogo.getFileName());
+            userinfo.set("corplogo", "/vmupload/" + corplogo.getFileName());
             setAttr("corplogo", "/vmupload/" + corplogo.getFileName());
         }
         userinfo.save();
