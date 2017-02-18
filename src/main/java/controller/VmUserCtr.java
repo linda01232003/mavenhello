@@ -16,22 +16,25 @@ public class VmUserCtr extends Controller {
     }
     public void adduserinf(){
         //****注意，如果form表单中既有text又有文件。要先接收文件。
-        VmUserCardMdl userinfo = getModel(VmUserCardMdl.class, "xmusercard");
-        userinfo.save();
-
         UploadFile headimg = getFile("headimg");
-
-
         UploadFile corplogo = getFile("corplogo");
-
-        System.out.println("file path is " + headimg.getUploadPath());
-        System.out.println("vmupload/" + headimg.getFileName());
-        System.out.println("file path is " + corplogo.getUploadPath());
-        System.out.println("vmupload/" + corplogo.getFileName());
-
-        setAttr("headimgpath", headimg.getUploadPath());
-        setAttr("headimgurl", "/vmupload/" + headimg.getFileName());
-        setAttr("corplogo", corplogo.getFileName());
+        VmUserCardMdl userinfo = getModel(VmUserCardMdl.class, "vmusercard");
+        if(null != headimg)
+        {
+            userinfo.set("headimage", headimg.getFileName());
+            setAttr("headimgurl", "/vmupload/" + headimg.getFileName());
+        }
+        if(null != corplogo)
+        {
+            userinfo.set("corplogo", corplogo.getFileName());
+            setAttr("corplogo", "/vmupload/" + corplogo.getFileName());
+        }
+        userinfo.save();
         this.render("welcom.jsp");
+
+//        System.out.println("file path is " + headimg.getUploadPath());
+//        System.out.println("vmupload/" + headimg.getFileName());
+//        System.out.println("file path is " + corplogo.getUploadPath());
+//        System.out.println("vmupload/" + corplogo.getFileName());
     }
 }

@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
     <title></title>
-    <link rel="stylesheet" href="css/mui.min.css"/>
-    <link rel="stylesheet" href="css/vmcomm.css"/>
+    <link rel="stylesheet" href="${path}/css/mui.min.css"/>
+    <link rel="stylesheet" href="${path}/css/vmcomm.css"/>
 </head>
 <body>
 <div class="vm_header" align="center">
@@ -27,55 +27,55 @@
 <div class="vm_content">
     <form class="vm_form" enctype="multipart/form-data" action="${path}/vmuser/adduserinf" method="post">
         <label>姓名<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.username" type="text" />
+        <input name="vmusercard.username" type="text" />
         <div class="vm_line"></div>
 
         <label>手机<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.mobile" type="text" />
+        <input name="vmusercard.mobile" type="text" />
         <div class="vm_line"></div>
 
         <label>邮箱<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.mobile" type="text" />
+        <input name="vmusercard.mobile" type="text" />
         <div class="vm_line"></div>
 
         <label>生日</label>
-        <input name="xmusercard.mobile" type="text" />
+        <input name="vmusercard.mobile" type="text" />
         <div class="vm_line"></div>
 
         <label>微信<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.weixin" type="text" />
+        <input name="vmusercard.weixin" type="text" />
         <div class="vm_line"></div>
 
         <label>从事行业<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.industry" type="text" />
+        <input name="vmusercard.industry" type="text" />
         <div class="vm_line"></div>
 
         <label>公司名称<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.corpname" type="text" />
+        <input name="vmusercard.corpname" type="text" />
         <div class="vm_line"></div>
 
         <label>职务<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.title" type="text" />
+        <input name="vmusercard.title" type="text" />
         <div class="vm_line"></div>
 
         <label>固话</label>
-        <input name="xmusercard.phone" type="text" />
+        <input name="vmusercard.phone" type="text" />
         <div class="vm_line"></div>
 
         <label>单位地址</label>
-        <input name="xmusercard.corpaddr" type="text" />
+        <input name="vmusercard.corpaddr" type="text" />
         <div class="vm_line"></div>
 
         <label>擅长领域和职业技能<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.profession" type="text" />
+        <input name="vmusercard.profession" type="text" />
         <div class="vm_line"></div>
 
         <label>从业时间<span class="vm_form_star">*</span></label>
-        <input name="xmusercard.begintime" type="text" />
+        <input name="vmusercard.begintime" type="text" />
         <div class="vm_line"></div>
 
         <label>个人简介<span class="vm_form_star">*</span></label>
-        <textarea class="vm_form_resume" name="xmusercard.indiviualresume" rows="8" cols="3"></textarea>
+        <textarea class="vm_form_resume" name="vmusercard.indiviualresume" rows="8" cols="3"></textarea>
         <div class="vm_line"></div>
 
         <label>个人头像<span class="vm_form_star">*</span></label>
