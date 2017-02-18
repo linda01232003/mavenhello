@@ -25,7 +25,7 @@
     <h1 class="mui-title vm_header_title">V名片</h1>
 </div>
 <div class="vm_content">
-    <form class="vm_form" enctype="multipart/form-data" action="<%=path%>>/vmuser/adduserinf" method="post">
+    <form class="vm_form" enctype="multipart/form-data" action="<%=path%>/vmuser/adduserinf" method="post">
         <label>姓名<span class="vm_form_star">*</span></label>
         <input name="vmusercard.username" type="text" />
         <div class="vm_line"></div>
