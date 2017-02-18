@@ -35,7 +35,7 @@
                             <td>${vmusercard.birthday}</td><td>${vmusercard.weixin}</td><td>${vmusercard.industry}</td><td>${vmusercard.corpname}</td>
                             <td>${vmusercard.title}</td><td>${vmusercard.phone}</td><td>${vmusercard.corpaddr}</td><td>${vmusercard.profession}</td>
                             <td>${vmusercard.begintime}</td><td>${vmusercard.indiviualresume}</td>
-                            <td><a href="${vmusercard.headimage}">${vmusercard.headimage}</a></td>
+                            <td><a href="${vmusercard.headimg}">${vmusercard.headimg}</a></td>
                             <td><a href="${vmusercard.corplogo}">${vmusercard.corplogo}</a></td>
                             <td>
                                 <%--<a href="<%=path%>/admin/form/${vmusercard.id}" class="btn btn-primary btn-sm">修改</a>--%>

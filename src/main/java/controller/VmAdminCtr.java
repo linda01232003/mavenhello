@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class VmAdminCtr extends Controller {
     public void vmadminconsole(){
-        List<VmUserCardMdl> lstUserCard = VmUserCardMdl.dao.find("select * from vmusercard");
+        List<VmUserCardMdl> lstUserCard = VmUserCardMdl.dao.find("select * from vmusercard1");
 
         setAttr("vmusercard", lstUserCard);
         this.render("vmadminconsole.jsp");

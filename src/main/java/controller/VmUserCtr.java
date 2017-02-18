@@ -19,12 +19,12 @@ public class VmUserCtr extends Controller {
     }
     public void adduserinf(){
         //****注意，如果form表单中既有text又有文件。要先接收文件。
-        UploadFile headimg = getFile("headimg");
-        UploadFile corplogo = getFile("corplogo");
+        UploadFile headimg = getFile("vmusercard.headimg");
+        UploadFile corplogo = getFile("vmusercard.corplogo");
         VmUserCardMdl userinfo = getModel(VmUserCardMdl.class, "vmusercard");
         if(null != headimg)
         {
-            userinfo.set("headimage", "/vmupload/" + headimg.getFileName());
+            userinfo.set("headimg", "/vmupload/" + headimg.getFileName());
             setAttr("headimgurl", "/vmupload/" + headimg.getFileName());
         }
         if(null != corplogo)

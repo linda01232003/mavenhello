@@ -54,9 +54,9 @@ public class HelloConf  extends JFinalConfig {
         ActiveRecordPlugin arp = new ActiveRecordPlugin(C3p0Plugin);
         plugins.add(arp);
 
-        arp.addMapping("userinfo", UserMdl.class);
+//        arp.addMapping("userinfo", UserMdl.class);
         arp.addMapping("xmuser", XmUserMdl.class);
-        arp.addMapping("vmusercard", VmUserCardMdl.class);
+        arp.addMapping("vmusercard1", VmUserCardMdl.class);
     }
 
     public void configInterceptor(Interceptors interceptors) {

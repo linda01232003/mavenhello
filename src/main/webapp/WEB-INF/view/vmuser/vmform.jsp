@@ -35,11 +35,11 @@
         <div class="vm_line"></div>
 
         <label>邮箱<span class="vm_form_star">*</span></label>
-        <input name="vmusercard.mobile" type="text" />
+        <input name="vmusercard.email" type="text" />
         <div class="vm_line"></div>
 
         <label>生日</label>
-        <input name="vmusercard.mobile" type="text" />
+        <input name="vmusercard.birthday" type="text" />
         <div class="vm_line"></div>
 
         <label>微信<span class="vm_form_star">*</span></label>
@@ -80,12 +80,12 @@
 
         <label>个人头像<span class="vm_form_star">*</span></label>
         <div class="vm_from_img">
-            <input type="file" class="form-control" name="headimg"/>
+            <input type="file" class="form-control" name="vmusercard.headimg"/>
         </div>
 
         <label>公司logo<span class="vm_form_star">*</span></label>
         <div class="vm_from_img">
-            <input type="file" class="form-control" name="corplogo"/>
+            <input type="file" class="form-control" name="vmusercard.corplogo"/>
         </div>
 
 
