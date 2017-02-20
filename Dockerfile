@@ -1,4 +1,4 @@
-FROM hub.c.163.com/oliver_lee/mytomcat:v9
+FROM hub.c.163.com/ncetest_onlinecxq1/mytomcat:v9
 MAINTAINER limingming
 COPY . /usr/lzt/
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
