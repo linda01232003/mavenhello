@@ -1,5 +1,5 @@
 FROM hub.c.163.com/ncetest_onlinecxq1/mytomcat:v9
-MAINTAINER limingming
+MAINTAINER limingming111
 COPY . /usr/lzt/
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 ENV CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
